@@ -7,8 +7,12 @@ const contentDirectory = path.join(process.cwd(), 'content');
 export function getSortedContentData(folderName) {
     const folder = path.join(contentDirectory, folderName);
 
+    if (!fs.existsSync(folder)) {
+        return [];
+    }
+
     // Get file names under the specified folder
-    const fileNames = fs.readdirSync(folder);
+    const fileNames = fs.readdirSync(folder).filter(f => f.endsWith('.md'));
     const allContentData = fileNames.map((fileName) => {
         // Remove ".md" from file name to get id
         const slug = fileName.replace(/\.md$/, '');
@@ -40,6 +44,9 @@ export function getSortedContentData(folderName) {
 
 export function getContentData(folderName, slug) {
     const fullPath = path.join(contentDirectory, folderName, `${slug}.md`);
+    if (!fs.existsSync(fullPath)) {
+        return null;
+    }
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
     // Use gray-matter to parse the content metadata section

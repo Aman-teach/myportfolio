@@ -83,9 +83,10 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=aman" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=aman" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=aman" />
+        <link rel="shortcut icon" href="/favicon.ico?v=aman" />
         <link rel="manifest" href="/site.webmanifest" />
         <link key="canonical" rel="canonical" href={canonicalUrl} />
         <link rel="alternate" type="application/rss+xml" title={siteConfig.name} href={`${SITE_URL}/rss.xml`} />

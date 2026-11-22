@@ -27,8 +27,8 @@ const SocialButtons = (
               `}
               href={socialLink.link}
               key={index}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={socialLink.link.startsWith("mailto:") ? undefined : "_blank"}
+              rel={socialLink.link.startsWith("mailto:") ? undefined : "noopener noreferrer"}
             >
               {isMobile ? (
                 <>

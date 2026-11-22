@@ -2,6 +2,7 @@ import React from 'react';
 
 import {getSortedPostsData} from '@/lib/projects';
 import ProjectsList from "@/components/Projects/ProjectsList";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import SEO from "@/components/SEO.tsx";
 
 import {Project} from "@/types/project.ts";
@@ -24,12 +25,14 @@ const ProjectsHome = ({allPostsData}: ProjectsHomeProps) => {
   return (
     <>
       <SEO
-        title="Projects"
-        description="Production and experimental products, from early MVPs to shipped tools."
-        keywords="projects, products, portfolio, apps, tools"
+        title="Work & Case Studies"
+        description="High-retention talking heads, organic viral short-form, and client post-production case studies."
+        keywords="video editing, short-form, reels, tiktok, premiere pro, capcut, byron walsh"
         canonicalPath="/projects"
       />
-      <ProjectsList posts={allPostsData}/>
+      <BackgroundBeamsWithCollision className="min-h-full">
+        <ProjectsList posts={allPostsData}/>
+      </BackgroundBeamsWithCollision>
     </>
   )
 };

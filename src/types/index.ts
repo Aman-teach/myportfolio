@@ -10,6 +10,11 @@ type Experience = {
   points: string[];
   techStack: string[];
   fullLogo?: string;
+  videoReview?: {
+    wistiaId: string;
+    author: string;
+    label?: string;
+  };
 };
 
 type RouteLink = {

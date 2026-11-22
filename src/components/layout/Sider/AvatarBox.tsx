@@ -32,12 +32,12 @@ const AvatarBox = ({ mobile = false }: AvatarBoxProps) => {
       <div
         className="text-sm flex flex-col"
       >
-        <span className="text-black md:text-lg">
+        <span className="text-gray-900 dark:text-gray-100 font-semibold md:text-lg">
           {siteConfig.name}
         </span>
-        <span>
+        <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
           <Typewriter
-            words={[siteConfig.role]}
+            words={["Video Editor", "Short-Form Specialist"]}
             loop
             cursor
           />

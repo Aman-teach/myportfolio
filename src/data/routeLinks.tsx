@@ -19,14 +19,20 @@ const links: RouteLink[] = [
     name: "Experience",
     icon: <MdOutlineMapsHomeWork/>
   },
-  {
-    path: "/blogs",
-    name: "Blogs",
-    icon: <IoPencilOutline/>
-  },
+  // To re-enable Blogs in the sidebar, uncomment the block below:
+  // {
+  //   path: "/blogs",
+  //   name: "Blogs",
+  //   icon: <IoPencilOutline/>
+  // },
   {
     path: "/about",
     name: "About",
+    icon: <FaRegUserCircle/>
+  },
+  {
+    path: "/tools",
+    name: "Tools",
     icon: <FaRegUserCircle/>
   },
   {

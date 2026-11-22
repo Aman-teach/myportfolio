@@ -33,8 +33,8 @@ const Contact = () => {
           {"Have an idea, a question, or just want to say hi? Reach out below."}
         </h2>
         <div className="flex z-20 items-center space-x-4 relative">
-
-          <XConnectCard />
+          <EmailButton />
+          {/* <XConnectCard /> */}
         </div>
 
         {/* <SubscribeCard /> */}

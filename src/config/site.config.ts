@@ -1,43 +1,38 @@
-// Edit this file to make the template yours. Everything about your identity,
-// links, SEO, and navigation lives here. Leave a field blank ("") to hide the UI
-// that depends on it. For example, an empty `phone` hides the call button.
-
 export const siteConfig = {
-  name: "Your Name",
-  role: "Software Engineer",
-  tagline: "I turn ideas into products.",
-  bio: "This is your short bio. Edit it in src/config/site.config.ts, along with everything else about this site.",
+  name: "Aman",
+  role: "Content Creator & Personal Brand Builder",
+  tagline: "I turn talking-head footage into videos people actually finish.",
+  bio: "Self-taught video editor from Himachal Pradesh specializing in short-form storytelling, talking-head retention, and visual branding.",
 
-  email: "you@example.com",
+  email: "amanxmedia@gmail.com",
   phone: "", // used by the contact call button; blank hides it
-  siteUrl: "https://template.amankumar.ai",
+  siteUrl: "https://yourportfolio.com",
 
   avatar: "/images/avatar.png",
-  resume: "/resume.pdf",
-  calLink: "", // your Cal.com handle (e.g. "yourname/30min"); blank hides the booking embed
+  resume: "",
+  calLink: "your-calendly-link", // your Cal.com handle
 
-  githubUsername: "onlyoneaman", // used for the GitHub contributions graph
+  githubUsername: "", 
 
   social: {
-    twitter: "https://x.com/onlyoneaman",
-    linkedin: "https://linkedin.com/in/onlyoneaman",
-    github: "https://github.com/onlyoneaman",
-    instagram: "https://instagram.com/_a_gryffindor",
-    medium: "https://onlyoneaman.medium.com",
+    twitter: "",
+    linkedin: "https://www.linkedin.com/in/amankumar458/",
+    github: "",
+    instagram: "https://www.instagram.com/raw.byaman/",
+    medium: "",
   },
 
   seo: {
-    defaultTitle: "Your Name",
-    defaultDescription: "Personal portfolio, blog, and projects.",
-    twitterHandle: "@onlyoneaman",
-    keywords: "portfolio, blog, projects, developer",
+    defaultTitle: "Aman | Video Editor",
+    defaultDescription: "Portfolio of Aman, Video Editor & Motion Designer.",
+    twitterHandle: "",
+    keywords: "video editor, motion designer, youtube editor, premiere pro",
   },
 
   nav: [
-    { name: "Projects", path: "/projects", description: "Things I've built." },
+    { name: "Case Studies", path: "/projects", description: "Breakdowns of my edits." },
     { name: "Experience", path: "/experience", description: "Where I've worked." },
-    { name: "Blogs", path: "/blogs", description: "Notes and writing." },
-    { name: "About", path: "/about", description: "About me." },
+    { name: "Tools", path: "/tools", description: "Software and hardware I use." },
     { name: "Contact", path: "/contact", description: "Get in touch." },
   ],
 } as const;

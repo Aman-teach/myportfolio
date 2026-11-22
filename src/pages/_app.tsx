@@ -8,17 +8,11 @@ import Head from "next/head";
 import Script from "next/script";
 import jsonLd from "@/scripts/jsonLd.ts";
 import { useRouter } from "next/router";
-import { Inter } from "next/font/google";
 import { useEffect } from "react";
 import posthog from "posthog-js";
 import { PostHogProvider } from "posthog-js/react";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { siteConfig } from "@/config/site.config";
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
 
 const SITE_URL = siteConfig.siteUrl;
 const DEFAULT_IMAGE = `${SITE_URL}${siteConfig.avatar}`;
@@ -113,7 +107,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
       <GoogleAnalytics />
       <PostHogProvider client={posthog}>
         <TooltipProvider delayDuration={0}>
-          <div className={inter.className}>
+          <div className="font-sans">
             {useLayout ? (
               <Layout>
                 <Component {...pageProps} />
